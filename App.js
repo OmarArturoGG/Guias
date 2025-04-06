@@ -10,7 +10,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        screenOptions={({ route }) => ({
+        screenOptions={({ route }) => ({      //prueba
           tabBarIcon: ({ color, size }) => {
             let iconName;
             if (route.name === "Camera") {
@@ -31,7 +31,7 @@ export default function App() {
           component={CameraComponent}
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: "blue" }, // Cambia el color de fondo aquí
+            cardStyle: { backgroundColor: "blue" },
           }}
         />
         <Tab.Screen
@@ -39,7 +39,7 @@ export default function App() {
           component={AudioRecorder}
           options={{
             headerShown: false,
-            cardStyle: { backgroundColor: "#000" }, // Cambia el color de fondo aquí
+            cardStyle: { backgroundColor: "#000" }, 
           }}
         />
 
